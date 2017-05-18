@@ -1,0 +1,447 @@
+---------------------------------------------------------------
+[ 2017-05-17T18:23:24+08:00 ] 172.31.21.57 101.201.50.189 GET /
+[ info ] 54.249.1.236/ [运行时间：0.019912s][吞吐率：50.22req/s] [内存消耗：2,442.16kb] [文件加载：50]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lv2timkedpdp4kqki59keom702',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T18:32:53+08:00 ] 172.31.21.57 103.7.30.68 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.028872s][吞吐率：34.64req/s] [内存消耗：3,131.04kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '782',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000225s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[aw2j9l4ipbrykgnhox6tzums7fdvc085]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[1233456789231]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[BFD18CCDB971F3FE6202CA7E50431B78]]></sign>\n<time_end><![CDATA[20170517172836]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171252450427]]></transaction_id>\n</xml>') [ RunTime:0.003762s ]
+---------------------------------------------------------------
+[ 2017-05-17T18:38:46+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.028010s][吞吐率：35.70req/s] [内存消耗：3,131.03kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '779',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[ij2cmtxs8uhw1v6ropq0nkfzgly4957e]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[1234567891]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[A3DAAABEB9AA27F1B4AB4C3E57AAE9A3]]></sign>\n<time_end><![CDATA[20170517170425]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171246720347]]></transaction_id>\n</xml>') [ RunTime:0.003653s ]
+---------------------------------------------------------------
+[ 2017-05-17T18:41:16+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.030405s][吞吐率：32.89req/s] [内存消耗：3,130.96kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '783',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000251s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[ojm9vukd2zw8bf5qtec7hryxl31n0gia]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[12334567894231]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[F6F00281B1F93261E58AF3464493FC54]]></sign>\n<time_end><![CDATA[20170517173704]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171252691585]]></transaction_id>\n</xml>') [ RunTime:0.005690s ]
+---------------------------------------------------------------
+[ 2017-05-17T18:43:03+08:00 ] 172.31.21.57 103.7.30.68 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.029546s][吞吐率：33.85req/s] [内存消耗：3,131.03kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '780',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[hbkd1yia7o2ult0g38v4xrj6mneqpz9w]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[12345678921]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[D444CF5C78F4AA5225CBB214B958FE63]]></sign>\n<time_end><![CDATA[20170517170845]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171246909035]]></transaction_id>\n</xml>') [ RunTime:0.004965s ]
+---------------------------------------------------------------
+[ 2017-05-17T19:11:06+08:00 ] 172.31.21.57 101.226.68.215 GET /index/index/index
+[ info ] 54.249.1.236/index/index/index [运行时间：0.018529s][吞吐率：53.97req/s] [内存消耗：2,259.65kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'accept-encoding' => 'deflate, gzip',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'connection' => 'Close',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T19:11:18+08:00 ] 172.31.21.57 103.7.30.68 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.028119s][吞吐率：35.56req/s] [内存消耗：3,130.96kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '783',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[ojm9vukd2zw8bf5qtec7hryxl31n0gia]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[12334567894231]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[F6F00281B1F93261E58AF3464493FC54]]></sign>\n<time_end><![CDATA[20170517173704]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171252691585]]></transaction_id>\n</xml>') [ RunTime:0.003773s ]
+---------------------------------------------------------------
+[ 2017-05-17T19:13:05+08:00 ] 172.31.21.57 103.7.30.68 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.028153s][吞吐率：35.52req/s] [内存消耗：3,131.03kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '780',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000241s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[hbkd1yia7o2ult0g38v4xrj6mneqpz9w]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[12345678921]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[D444CF5C78F4AA5225CBB214B958FE63]]></sign>\n<time_end><![CDATA[20170517170845]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171246909035]]></transaction_id>\n</xml>') [ RunTime:0.003469s ]
+---------------------------------------------------------------
+[ 2017-05-17T19:21:38+08:00 ] 172.31.21.57 103.7.30.68 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.029700s][吞吐率：33.67req/s] [内存消耗：3,131.03kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '781',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[iyokgf17dv4zep5qwt3xcu6h0nmsr2l8]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[123345678921]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[1397E0106365D2AE79D0EF68E10C5D51]]></sign>\n<time_end><![CDATA[20170517171715]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171250909111]]></transaction_id>\n</xml>') [ RunTime:0.005138s ]
+---------------------------------------------------------------
+[ 2017-05-17T19:32:58+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.028073s][吞吐率：35.62req/s] [内存消耗：3,131.04kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '782',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000245s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[aw2j9l4ipbrykgnhox6tzums7fdvc085]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[1233456789231]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[BFD18CCDB971F3FE6202CA7E50431B78]]></sign>\n<time_end><![CDATA[20170517172836]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171252450427]]></transaction_id>\n</xml>') [ RunTime:0.003596s ]
+---------------------------------------------------------------
+[ 2017-05-17T19:33:52+08:00 ] 172.31.21.57 54.169.213.177 GET /
+[ info ] 54.249.1.236/ [运行时间：0.018346s][吞吐率：54.51req/s] [内存消耗：2,254.20kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T19:41:20+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.030003s][吞吐率：33.33req/s] [内存消耗：3,130.96kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '783',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000258s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[ojm9vukd2zw8bf5qtec7hryxl31n0gia]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[12334567894231]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[F6F00281B1F93261E58AF3464493FC54]]></sign>\n<time_end><![CDATA[20170517173704]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171252691585]]></transaction_id>\n</xml>') [ RunTime:0.005513s ]
+---------------------------------------------------------------
+[ 2017-05-17T20:13:07+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.029952s][吞吐率：33.39req/s] [内存消耗：3,131.03kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '780',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[hbkd1yia7o2ult0g38v4xrj6mneqpz9w]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[12345678921]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[D444CF5C78F4AA5225CBB214B958FE63]]></sign>\n<time_end><![CDATA[20170517170845]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171246909035]]></transaction_id>\n</xml>') [ RunTime:0.005405s ]
+---------------------------------------------------------------
+[ 2017-05-17T20:21:39+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.030584s][吞吐率：32.70req/s] [内存消耗：3,131.03kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '781',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.001804s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[iyokgf17dv4zep5qwt3xcu6h0nmsr2l8]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[123345678921]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[1397E0106365D2AE79D0EF68E10C5D51]]></sign>\n<time_end><![CDATA[20170517171715]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171250909111]]></transaction_id>\n</xml>') [ RunTime:0.004252s ]
+---------------------------------------------------------------
+[ 2017-05-17T20:41:21+08:00 ] 172.31.21.57 103.7.30.68 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.036552s][吞吐率：27.36req/s] [内存消耗：3,130.96kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '783',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000251s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[ojm9vukd2zw8bf5qtec7hryxl31n0gia]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[12334567894231]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[F6F00281B1F93261E58AF3464493FC54]]></sign>\n<time_end><![CDATA[20170517173704]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705171252691585]]></transaction_id>\n</xml>') [ RunTime:0.011933s ]
