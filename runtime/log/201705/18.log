@@ -29649,3 +29649,423 @@
 [ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/order.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T11:58:28+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.030434s][吞吐率：32.86req/s] [内存消耗：3,238.41kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '774',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[ezbhy7a4v0jqol2nmtgxdufp8r1ics3k]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[29779]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[5709F9A8DAEE8A82C6688D8AF4D78172]]></sign>\n<time_end><![CDATA[20170518102412]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705181327721674]]></transaction_id>\n</xml>') [ RunTime:0.003789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_order` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] UPDATE `th_order`  SET `status`=1,`pay_time`='1495079908'  WHERE  `out_trade_no` = '29779' [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2017-05-18T12:24:30+08:00 ] 172.31.21.57 103.7.30.68 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.031300s][吞吐率：31.95req/s] [内存消耗：3,238.41kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '774',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000233s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[6bw137lu0d9i5nmr4thfv8yagksqp2ec]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[61304]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[4FB2EA2A14212EA6B5A3BB223BD259DA]]></sign>\n<time_end><![CDATA[20170518102011]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705181325968487]]></transaction_id>\n</xml>') [ RunTime:0.005423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_order` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] UPDATE `th_order`  SET `status`=1,`pay_time`='1495081470'  WHERE  `out_trade_no` = '61304' [ RunTime:0.000195s ]
+---------------------------------------------------------------
+[ 2017-05-18T13:18:49+08:00 ] 172.31.21.57 123.149.76.154 POST /index/index/pay
+[ info ] 54.249.1.236/index/index/pay [运行时间：0.018057s][吞吐率：55.38req/s] [内存消耗：2,288.30kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://54.249.1.236',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://54.249.1.236/index/index/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+)
+[ info ] [ PARAM ] array (
+  'total_fee' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->pay[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T13:18:57+08:00 ] 172.31.21.57 123.149.76.154 GET /index/index/order
+[ info ] 54.249.1.236/index/index/order [运行时间：0.017668s][吞吐率：56.60req/s] [内存消耗：2,201.30kb] [文件加载：47]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->order[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/order.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T13:24:32+08:00 ] 172.31.21.57 103.7.30.71 POST /index/index/callback
+[ info ] 54.249.1.236/index/index/callback [运行时间：0.031481s][吞吐率：31.77req/s] [内存消耗：3,238.41kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'content-length' => '774',
+  'host' => '54.249.1.236',
+  'user-agent' => 'Mozilla/4.0',
+  'content-type' => 'text/xml',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->callback[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] INSERT INTO `th_test` (`content`) VALUES ('<xml><appid><![CDATA[wx3993a74498ef22b6]]></appid>\n<bank_type><![CDATA[SPDB_DEBIT]]></bank_type>\n<cash_fee><![CDATA[1]]></cash_fee>\n<fee_type><![CDATA[CNY]]></fee_type>\n<is_subscribe><![CDATA[N]]></is_subscribe>\n<mch_id><![CDATA[1469814202]]></mch_id>\n<nonce_str><![CDATA[6bw137lu0d9i5nmr4thfv8yagksqp2ec]]></nonce_str>\n<openid><![CDATA[o7YFZwjI5a0fALpdBJ6Nv02Lvu6M]]></openid>\n<out_trade_no><![CDATA[61304]]></out_trade_no>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<sign><![CDATA[4FB2EA2A14212EA6B5A3BB223BD259DA]]></sign>\n<time_end><![CDATA[20170518102011]]></time_end>\n<total_fee>1</total_fee>\n<trade_type><![CDATA[NATIVE]]></trade_type>\n<transaction_id><![CDATA[4004762001201705181325968487]]></transaction_id>\n</xml>') [ RunTime:0.004831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_order` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] UPDATE `th_order`  SET `status`=1,`pay_time`='1495085072'  WHERE  `out_trade_no` = '61304' [ RunTime:0.000193s ]
+---------------------------------------------------------------
+[ 2017-05-18T13:35:51+08:00 ] 172.31.21.57 123.149.76.154 GET /index/index/test
+[ info ] 54.249.1.236/index/index/test [运行时间：0.024887s][吞吐率：40.18req/s] [内存消耗：3,156.65kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->test[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:dbname=third;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `th_test` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `th_test` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2017-05-18T13:39:29+08:00 ] 172.31.21.57 123.149.76.154 GET /index/index/order
+[ info ] 54.249.1.236/index/index/order [运行时间：0.020230s][吞吐率：49.43req/s] [内存消耗：2,391.67kb] [文件加载：49]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->order[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/order.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T13:42:02+08:00 ] 172.31.21.57 123.149.76.154 GET /index/index/order
+[ info ] 54.249.1.236/index/index/order [运行时间：0.017452s][吞吐率：57.30req/s] [内存消耗：2,200.86kb] [文件加载：47]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->order[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/order.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T13:42:11+08:00 ] 172.31.21.57 123.149.76.154 POST /index/index/pay
+[ info ] 54.249.1.236/index/index/pay [运行时间：0.017952s][吞吐率：55.70req/s] [内存消耗：2,288.30kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://54.249.1.236',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://54.249.1.236/index/index/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+)
+[ info ] [ PARAM ] array (
+  'total_fee' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->pay[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T13:42:22+08:00 ] 172.31.21.57 123.149.76.154 POST /index/index/pay
+[ info ] 54.249.1.236/index/index/pay [运行时间：0.017937s][吞吐率：55.75req/s] [内存消耗：2,288.30kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://54.249.1.236',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://54.249.1.236/index/index/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+)
+[ info ] [ PARAM ] array (
+  'total_fee' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->pay[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T13:42:28+08:00 ] 172.31.21.57 123.149.76.154 POST /index/index/pay
+[ info ] 54.249.1.236/index/index/pay [运行时间：0.017776s][吞吐率：56.26req/s] [内存消耗：2,288.30kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://54.249.1.236',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://54.249.1.236/index/index/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+)
+[ info ] [ PARAM ] array (
+  'total_fee' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->pay[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T13:47:38+08:00 ] 172.31.21.57 101.226.33.219 GET /index/index/order
+[ info ] 54.249.1.236/index/index/order [运行时间：0.017893s][吞吐率：55.89req/s] [内存消耗：2,199.94kb] [文件加载：47]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->order[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/order.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T14:30:48+08:00 ] 172.31.21.57 101.201.50.189 GET /index/index/order
+[ info ] 54.249.1.236/index/index/order [运行时间：0.017771s][吞吐率：56.27req/s] [内存消耗：2,201.28kb] [文件加载：47]
+[ info ] [ LANG ] /home/wwwroot/default/third/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '54.249.1.236',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=nlmjai3gk48c5f80kd8hsgrjc2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->order[ /home/wwwroot/default/third/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/third/public/../application/index/view/index/order.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"/home/wwwroot/default/third/public/../application/index/view/index/order.html";i:1495075898;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"/home/wwwroot/default/third/public/../application/index/view/index/order.html";i:1495085961;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,22 +38,22 @@
                         });
                         jQuery('#qrcode').qrcode({width: 150,height: 150,text: data.url});
                         out_trade_no = data.out_trade_no;
+                        setInterval(function(){
+                            $.ajax({
+                                url : 'http://54.249.1.236/index/index/confirmOrder',
+                                dataType : 'json',
+                                type : 'post',
+                                data : {out_trade_no:out_trade_no},
+                                success : function(data){
+                                    if(data.code == 1){
+                                        window.location.href = 'http://54.249.1.236/index/index/chenggong?out_trade_no='+data.data.out_trade_no;
+                                    }
+                                }
+                            })
+                        },1000);
                     }else if(data.status == 'false'){
                         layer.msg(data.msg);
                     }
-                    setInterval(function(){
-                        $.ajax({
-                            url : 'http://54.249.1.236/index/index/confirmOrder',
-                            dataType : 'json',
-                            type : 'post',
-                            data : {out_trade_no:out_trade_no},
-                            success : function(data){
-                                if(data.code == 1){
-                                    window.location.href = 'http://54.249.1.236/index/index/chenggong?out_trade_no='+data.data.out_trade_no;
-                                }
-                            }
-                        })
-                    },1000);
                 }
             })
         })
